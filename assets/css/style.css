@@ -1,0 +1,39 @@
+.hide {
+    display: none;
+}
+
+body {
+    background: lightgray;
+    margin: 20;
+    padding: 20;
+    display: inline-flexbox;
+    position: center;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    
+    justify-content: center;
+    text-align: center;
+}
+
+.quiz-description {
+    justify-content: center;
+    text-align: center;
+}
+.score-time {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: blue;
+    font-size: 25px;
+}
+.title {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    color:coral;
+    text-shadow: 0 0 10px rgb(27, 27, 27)
+}
