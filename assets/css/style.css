@@ -18,6 +18,10 @@ main {
     text-align: center;
 }
 
+main ol li {
+    list-style-position: inside;
+}
+
 .quiz-description {
     justify-content: center;
     text-align: center;
