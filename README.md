@@ -2,6 +2,8 @@
 Use Web API and DOM manipulation to create interactive timed quiz
 ## requirements
 The quiz timer acts as score keeper by counting down as the participant answers series of questions. Wrong answers make time increment by 10. Scores are sent to local storage. 
+## website deployed:
+https://github.com/Clayton-Andersen/Javascript-Code-Quiz.git
 ## image of progress thus far:
 ![image](https://user-images.githubusercontent.com/82545902/119302344-ce38d480-bc18-11eb-8b21-1d59e2582c77.png)
 ## issues to overcome:
