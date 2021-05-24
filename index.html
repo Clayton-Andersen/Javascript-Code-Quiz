@@ -11,7 +11,7 @@
     <header>
         <div class="score-time">
             <div class="high-scores">High Scores</div>
-            <div class="countdown-timer">time</div>
+            <div id="countdown-timer">time</div>
         </div>
         
     </header>
@@ -24,9 +24,71 @@
         </div>
     </main>
 
-    <main class = "question-body hide">
+    <main class = "question-body" id = >
+        <div>
 
-        </h2 class = "quiestions" id = "quiz-question">testing</h2>
+            <div id = "first-segment " class= "segment hide">
+                <question>Question 1...</question>
+                <options>
+                    <ol>A</ol>
+                    <ol>B</ol>
+                    <ol>C</ol>
+                    <ol>D</ol>
+                </options>
+                <button onclick="nextQuestion(0)">Next</button>
+            </div>
+        
+            <div id = "second-segment" class="segment hide">
+                <question>Question 2</question>
+                <options>
+                    <ol>A</ol>
+                    <ol>B</ol>
+                    <ol>C</ol>
+                    <ol>D</ol>
+                </options>
+                <button></button>
+            </div>
+            
+            <div id = "third-segment" class = "segment hide">
+            <question>Questino 3</question>
+            <options>
+                <ol>A</ol>
+                <ol>B</ol>
+                <ol>C</ol>
+                <ol>D</ol>
+            </options>
+            <button></button>
+            </div>
+            <question></question>
+            <options>
+                <ol></ol>
+                <ol></ol>
+                <ol></ol>
+                <ol></ol>
+            </options>
+            <button></button>
+        
+            <question></question>
+            <options>
+                <ol></ol>
+                <ol></ol>
+                <ol></ol>
+                <ol></ol>
+            </options>
+            <button></button>
+        
+            <question></question>
+            <options>
+                <ol></ol>
+                <ol></ol>
+                <ol></ol>
+                <ol></ol>
+            </options>
+            <button></button>
+        
+        
+        </div>
+        <h2 class = "quiestions" id = "quiz-question">testing</h2>
             <ol class = "answers" id = "quiz-answers">
                 <!-- li need to be buttons-->
                 
