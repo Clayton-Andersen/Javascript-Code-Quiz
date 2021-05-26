@@ -11,102 +11,31 @@
     <header>
         <div class="score-time">
             <div class="high-scores">High Scores</div>
-            <div id="countdown-timer">time</div>
+            <div id="countdown-timer">Time Remaining: <span id="time"></span></div>
         </div>
         
     </header>
 
-    <main>
+    <main id="startScreen" class="start">
         <h1 class="title">Test Your JavaScript Knowledge!</h1>
         <div class = "quiz-description">
         <p>You've got 60 seconds to answer the series of questions. Each wrong answer results in a deduction of 10 seconds. <br>
             With speed and accuracy, you can claim the high score!</p>
-        <button id="button">Start</button>
+        <button id="start">Start</button>
         </div>
     </main>
 
-    <main class = "question-body" id = >
-        <div>
-
-            <div id = "first-segment " class= "segment hide">
-                <h2 id="question1">Question 1</h2>
-                <ol>
-                    <li><button id="answer1"></button></li>
-                    <li><button id="answer2"></button></li>
-                    <li><button id="answer3"></button></li>
-                    <li><button id="answer4"></button></li>
-                </ol>
-                <button onclick="nextQuestion(0)">Next</button>
-            </div>
-        
-            <div id = "second-segment" class="segment hide">
-                <h2>Question 2</h2>
-                <ol>
-                    <li><button id="answer1"></button></li>
-                    <li><button id="answer2"></button></li>
-                    <li><button id="answer3"></button></li>
-                    <li><button id="answer4"></button></li>
-                </ol>
-                <button onclick="nextQuestion(1)">Next</button>
-            </div>
-            
-            <div id = "third-segment" class = "segment hide">
-                <h2>Question 3</h2>
-                <ol>
-                    <li><button id="answer1"></button></li>
-                    <li><button id="answer2"></button></li>
-                    <li><button id="answer3"></button></li>
-                    <li><button id="answer4"></button></li>
-             </ol>
-             <button onclick="nextQuestion(2)">Next</button>
-            </div>
-
-            <div id = "forth-segment" class = "segment hide">
-                <h2>Question 4</h2>
-            <ol>
-                <li><button id="answer1"></button></li>
-                <li><button id="answer2"></button></li>
-                <li><button id="answer3"></button></li>
-                <li><button id="answer4"></button></li>
-            </ol>
-            <button onclick="nextQuestion(3)">Next</button>
-            </div>
-        
-            <div id = "third-segment" class = "segment hide">
-                <h2>Question 5</h2>
-            <ol>
-                <li><button id="answer1"></button></li>
-                <li><button id="answer2"></button></li>
-                <li><button id="answer3"></button></li>
-                <li><button id="answer4"></button></li>
-            </ol>
-            <button onclick="nextQuestion(4)">Next</button>
-            </div>
-
-            <div id = "third-segment" class = "segment hide">
-                <h2>Question 6</h2>
-            <ol>
-                <li><button id="answer1"></button></li>
-                <li><button id="answer2"></button></li>
-                <li><button id="answer3"></button></li>
-                <li><button id="answer4"></button></li>
-            </ol>
-            <button onclick="Finish(5)">Finish</button>
-            </div>
-        
-        </div>
-        <!--<h2 class = "quiestions" id = "quiz-question">testing</h2>
-            <ol class = "answers" id = "quiz-answers">
-                 li need to be buttons-->
-                
-            </ol>
-            
+    <main id="question-body" class="hide" >
+       <h2 id="questionTitle"></h2>
+        <div id="choices"></div>
     </main>
 
     <main class="hide">
-        <h3>score</h3>
+        <h3>score: <span id="finalScore"></span></h3>
         <input class="initials" type="text">
+        <button id="submit"></button>
     </main>
+    <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/code-quiz.js"></script>
 </body>
 
