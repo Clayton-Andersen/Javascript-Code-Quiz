@@ -1,4 +1,4 @@
-var time = 1;
+var time = 60;
 var timerId;
 var score;
 var questionIndex = 0;
@@ -19,7 +19,7 @@ function timer() {
     if (time <= 0) {
         // quizEnd()
     }
-}
+};
 
 function startQuiz() {
     startScreen.setAttribute("class", "hide");

@@ -4,10 +4,10 @@ var questionsArray = [
         choices: [
             "<scripting>",
             "<js>",
-            "<script>",
+            "<script>", //correct
             "<javascript>"
         ],
-        answer: "c"
+        answer: 2,
     },
     {
         question: "Arrays in JavaScript can be used to store_____.",
@@ -15,48 +15,48 @@ var questionsArray = [
             "nnumbers and strings",
             "other arrays",
             "booleans",
-            "all the above"
+            "all the above" //correct
         ],
-        answer: "d"
+        answer: 3,
     },
     {
         question: "Commonly used data types do not include______. ",
         choices: [
             "boleans",
             "strings",
-            "alerts",
+            "alerts", //correct
             "numbers"
         ],
-        answer: "c"
+        answer: 2,
     },
     {
         question: "The condition in an if/else statement is enclosed within______. ",
         choices: [
             "quotes",
-            "parantheses",
+            "parantheses", //correct
             "curly brackets",
             "square brackets"
         ],
-        answer: "b"
+        answer: 1,
     },
     {
         question: "String variables must be enclosed within ______ when being assigned to variables. ",
         choices: [
-            "brackets",
+            "brackets", //correct
             "quotes",
             "curly brackets",
             "hyphens"
         ],
-        answer: "a"
+        answer: 0,
     },
     {
         question: "JavaScript was originally developed by_____. ",
         choices: [
             "Bill Gates",
             "MySpace",
-            "Netscape",
+            "Netscape", //correct
             "Napster"
         ],
-        answer: "c"
+        answer: 2,
     }
 ];
