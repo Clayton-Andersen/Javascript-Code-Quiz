@@ -13,7 +13,7 @@ function timer() {
     time--;
     timerEl.textContent = time;
 
-    if (time===0) {
+    if (time === 0) {
         clearInterval(timerId);
     };
     if (time <= 0) {
@@ -23,7 +23,7 @@ function timer() {
 
 function startQuiz() {
     startScreen.setAttribute("class", "hide");
-    questionBody.removeAttribute("class","hide");
+    questionBody.removeAttribute("class", "hide");
 
     timerId = setInterval(timer, 1000);
     timerEl.textContent = time;
@@ -39,25 +39,30 @@ var segments = document.getElementsByClassName('segment')
 function startQuestion() {
     var currentQuestion = questionsArray[questionIndex];
     var questionTitleEl = document.getElementById('questionTitle')
+    var answerEl = document.createElement('ul')
     questionTitleEl.textContent = currentQuestion.question
     choicesEl.innerHTML = ""
-    currentQuestion.choices.forEach(function (choice, i) {
-        //declare var document.createEl, set attributes (choice) set text content to each choice 
-        //and add event listener to start next question append element(btn) 
-
-        //new function to check q right or wrong and score.
-        //run start question again increment index
-    })
-    // you want to start from the first index of your questions object 
-    // to print every question with forEach() method in JS
-    // each list items need to be clickable with a function click attached
+    currentQuestion.choices.forEach(function (choices, i) {
+        var ulElement = document.createElement('li')
+        ulElement.innerText = choices
+        ulElement.setAttribute("data-answer", i)
+        answerEl.append(ulElement)
+    });
+    choicesEl.append(answerEl)
 }
 
-// another function to evaluate your choices
-
-
-
 document.querySelector("#start").addEventListener("click", startQuiz)
+choicesEl.addEventListener("click", function (event) {
+    let clickedAnswer = event.target.attributes[0].value
+    clickedAnswer = clickedAnswer * 1
+    if (clickedAnswer === questionsArray[questionIndex].answer) {
+        console.log("correct")
+    } else {
+        console.log("false")
+    }
+    questionIndex++
+    startQuestion();
+})
 
 // var countdown
 // var startTimer
@@ -78,10 +83,10 @@ document.querySelector("#start").addEventListener("click", startQuiz)
 
 // function startQuiz() {
 //     timer();
-  
+
 //     segments[0].classList.remove("hide");
 //     }
-    
+
 // function nextQuestion(currentQuestion) {
 //     segments[currentQuestion].classList.add("hide");
 //     var followingQuestion = currentQuestion + 1;
